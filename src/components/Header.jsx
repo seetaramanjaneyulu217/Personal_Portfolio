@@ -11,7 +11,7 @@ const Header = () => {
         <>
 
             {/* For mobile view */}
-            <div className={`${openMenu ? 'translate-x-0' : 'translate-x-full'} fixed top-0 right-0 flex flex-col w-6/12 h-screen py-10 ease-in-out duration-500 bg-[#f1f474]`}>
+            <div className={`${openMenu ? 'translate-x-0' : 'translate-x-full'} fixed top-0 right-0 flex flex-col w-6/12 h-screen py-10 ease-in-out duration-500 bg-[#f1f474] font-notosans`}>
                 {/* For options on mobile screen from right of the screen */}
                 <RxCross1 size={20} className='ml-4 mb-10 text-white cursor-pointer' onClick={() => setOpenMenu(false)} />
 
@@ -27,7 +27,7 @@ const Header = () => {
             </div>
 
 
-            <nav className='flex justify-between items-center px-7 md:px-10'>
+            <nav className='flex justify-between items-center px-7 md:px-36 font-notosans'>
                 {/* For portfolio name */}
                 <div>
                     <h1 className='text-xl md:text-3xl font-semibold md:font-bold py-5'>Seeta Ram</h1>
@@ -36,7 +36,7 @@ const Header = () => {
 
                 {/* For options translate from right of the screen */}
 
-                <div className='hidden md:block justify-center pr-16'>
+                <div className='hidden md:block justify-center'>
                     <motion.ul className='text-sm flex gap-x-16'>
                         <a href='/'>{"Home".toUpperCase()}</a>
                         <a href='#about'>{"About".toUpperCase()}</a>
