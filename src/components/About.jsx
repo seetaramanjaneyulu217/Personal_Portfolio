@@ -50,7 +50,7 @@ const About = () => {
                 </div>
 
                 {/* Info about me */}
-                <div className='md:w-7/12 flex flex-col items-center md:items-start gap-y-8'>
+                <div className='md:w-7/12 flex flex-col items-center md:items-start gap-y-8' id='about'>
                     <h1 className='text-4xl font-semibold text-[#eef065]'>About me</h1>
                     <div className='break-words px-8 md:px-0'>
                         <p className='mt-4 text-lg'>
