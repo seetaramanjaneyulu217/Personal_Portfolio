@@ -134,23 +134,23 @@ const Projects = () => {
             <div className={`grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-10 mt-20 px-12 md:px-36 font-notosans ${(projectsType === 'web' && (webFilteredProjects.length !== 0 || webProjectType !== 'Filter')) ? 'hidden' : 'block'}`}>
                 {
                     projects.map(project => (
-                        <>
+                        <div key={project.title}>
                             {
                                 projectsType === "all" && (
-                                    <ProjectsCard project={project} />
+                                    <ProjectsCard key={project.title} project={project} />
                                 )
                             }
                             {
                                 projectsType === "web" && (
-                                    project.device === 'web' && <ProjectsCard project={project} />
+                                    project.device === 'web' && <ProjectsCard key={project.title} project={project} />
                                 )
                             }
                             {
                                 projectsType === "mobile" && (
-                                    project.device === 'mobile' && <ProjectsCard project={project} />
+                                    project.device === 'mobile' && <ProjectsCard key={project.title} project={project} />
                                 )
                             }
-                        </>
+                        </div>
                     ))
                 }
             </div>
@@ -159,7 +159,7 @@ const Projects = () => {
             <div className={`grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-10 mt-20 px-12 md:px-36 font-notosans ${(projectsType === 'web' && webFilteredProjects.length === 0) ? 'hidden' : 'block'}`}>
                 {
                     webFilteredProjects.map(project => (
-                        <ProjectsCard project={project} />
+                        <ProjectsCard key={project.title} project={project} />
                     ))
                 }
             </div>

@@ -20,37 +20,39 @@ const experiences = [
 ]
 
 const Experiences = () => {
-  return (
-    <div className='mt-24 md:mt-24'>
-        <div className='text-4xl md:text-5xl font-semibold text-[#eef065] text-center'>
-            Experiences
-        </div>
+    return (
+        <div className='mt-24 md:mt-24'>
+            <div id='experiences' className='text-4xl md:text-5xl font-semibold text-[#eef065] text-center'>
+                Experiences
+            </div>
 
-        <div className='flex flex-col gap-y-10'>
-            {
-                experiences.map((experience, index) => (
-                    <div className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center md:justify-between mt-10 md:mt-20 md:px-36 gap-x-32`}>
-                        <div className='w-72 md:w-3/12 bg-black rounded-full p-2'>
-                            <img src={experience.image} />
-                        </div>
+            <div className='flex flex-col gap-y-10'>
+                {
+                    experiences.map((experience, index) => (
+                        <div key={experience.company} className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center md:justify-between mt-10 md:mt-20 md:px-36 gap-x-32`}>
+                            <div className='w-72 md:w-3/12 bg-black rounded-full p-2'>
+                                <img src={experience.image} />
+                            </div>
 
-                        <div className='md:w-7/12 flex flex-col md:items-start gap-y-8 px-12'>
-                            <p className='mt-4 text-base md:text-lg'>
-                            <h1 className='text-2xl md:text-4xl mb-5 font-semibold text-[#eef065]'>{experience.title}</h1>
-                                {experience.description}
-                            </p>
-                            <div className='mt-4 text-lg'>
-                                <p>{experience.company}</p>
-                                <p>{experience.duration}</p>
+                            <div className='md:w-7/12 flex flex-col md:items-start gap-y-8 px-12'>
+                                <div className='mt-5'>
+                                    <h1 className='text-2xl md:text-4xl font-semibold text-[#eef065]'>{experience.title}</h1>
+                                    <p className='mt-4 text-base md:text-lg'>
+                                        {experience.description}
+                                    </p>
+                                </div>
+                                <div className='mt-4 text-lg'>
+                                    <p>{experience.company}</p>
+                                    <p>{experience.duration}</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                
-                ))
-            }
+
+                    ))
+                }
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Experiences

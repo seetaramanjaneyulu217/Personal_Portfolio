@@ -20,6 +20,7 @@ const Header = () => {
                     <a href='#about'>{"About".toUpperCase()}</a>
                     <a href='#skills'>{"Skills".toUpperCase()}</a>
                     <a href='#projects'>{"Projects".toUpperCase()}</a>
+                    <a href='#experiences'>{"Experiences".toUpperCase()}</a>
                     <a href='#contact'>{"Contact".toUpperCase()}</a>
                 </ul>
 
@@ -42,6 +43,7 @@ const Header = () => {
                         <a href='#about'>{"About".toUpperCase()}</a>
                         <a href='#skills'>{"Skills".toUpperCase()}</a>
                         <a href='#projects'>{"Projects".toUpperCase()}</a>
+                        <a href='#experiences'>{"Experiences".toUpperCase()}</a>
                         <a href='#contact'>{"Contact".toUpperCase()}</a>
                     </motion.ul>
                 </div>
