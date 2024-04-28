@@ -14,7 +14,7 @@ const About = () => {
                         <div className='text-4xl md:text-6xl font-semibold text-[#eef065]'>
                             <TypeAnimation
                                 sequence={[
-                                    'Seeta Ram',
+                                    'Seeta Ramanjaneyulu',
                                     1500,
                                     'Full Stack Developer',
                                     1500,
