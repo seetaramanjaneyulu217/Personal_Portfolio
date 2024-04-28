@@ -56,7 +56,7 @@ const Skills = () => {
 
       {/* Left side  */}
       <div className='md:w-7/12 flex flex-col gap-y-10 items-center md:items-start'>
-        <div className='text-[#eef065] text-4xl font-semibold'>Skills</div>
+        <div className='text-[#eef065] text-5xl font-semibold'>Skills</div>
         <div className='grid grid-cols-3 gap-x-10 md:gap-x-32 gap-y-10'>
           {
             skills.map(skill => (

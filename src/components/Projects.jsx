@@ -99,9 +99,17 @@ const Projects = () => {
         <>
             <div id='projects' className='mt-28 md:mt-48 font-notosans'>
                 <div className='flex justify-center border-2 mx-6 md:mx-72 rounded-full'>
-                    <div onClick={() => setProjectsType("all")} className={`cursor-pointer text-xl py-2 md:text-2xl w-1/2 flex justify-center font-semibold text-[#eef065] ${projectsType === "all" && 'border-2 border-yellow-300 bg-yellow-300 rounded-full text-white'}`}>All</div>
+                    <div onClick={() => {
+                        setProjectsType("all")
+                        setWebFilteredProjects([])
+                        setWebProjectType("Filter")
+                    }} className={`cursor-pointer text-xl py-2 md:text-2xl w-1/2 flex justify-center font-semibold text-[#eef065] ${projectsType === "all" && 'border-2 border-yellow-300 bg-yellow-300 rounded-full text-white'}`}>All</div>
                     <div onClick={() => setProjectsType("web")} className={`cursor-pointer text-xl py-2 md:text-2xl w-1/2 flex justify-center font-semibold text-[#eef065] ${projectsType === "web" && 'border-2 border-yellow-300 bg-yellow-300 rounded-full text-white'}`}>Web</div>
-                    <div onClick={() => setProjectsType("mobile")} className={`cursor-pointer text-xl py-2 md:text-2xl w-1/2 flex justify-center font-semibold text-[#eef065] ${projectsType === "mobile" && 'border-2 border-yellow-300 bg-yellow-300 rounded-full text-white'}`}>Mobile</div>
+                    <div onClick={() => {
+                        setProjectsType("mobile")
+                        setWebFilteredProjects([])
+                        setWebProjectType("Filter")
+                    }} className={`cursor-pointer text-xl py-2 md:text-2xl w-1/2 flex justify-center font-semibold text-[#eef065] ${projectsType === "mobile" && 'border-2 border-yellow-300 bg-yellow-300 rounded-full text-white'}`}>Mobile</div>
                 </div>
             </div>
 
