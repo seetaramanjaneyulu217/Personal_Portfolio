@@ -4,7 +4,7 @@ import { HiMiniSignal } from "react-icons/hi2";
 
 const ProjectsCard = ({ project }) => {
     return (
-        <div className='flex flex-col border-2 border-gray-200 rounded-2xl w-[18rem]'>
+        <div className='flex flex-col border-2 border-gray-200 rounded-2xl w-[18rem] font-notosans'>
             <img src={project.image} className='h-44 rounded-t-2xl' />
             <h1 className='text-xl mt-2 text-center'>{project.title}</h1>
             <div className='flex flex-col mt-5 mb-2 gap-y-3'>

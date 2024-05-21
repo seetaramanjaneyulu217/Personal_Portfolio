@@ -28,7 +28,7 @@ const Contact = () => {
 
 
     return (
-        <div className='mt-24 md:mt-36'>
+        <div className='mt-24 md:mt-36 font-notosans'>
             <div id='contact' className='text-[#eef065] text-3xl md:text-5xl text-center'>
                 Contact
             </div>
@@ -44,7 +44,7 @@ const Contact = () => {
                         <input name='user_name' type='text' placeholder='Your Name' className='border-2 border-[#eef065] w-72 md:w-96 h-10 px-4 rounded-xl' />
                         <input name='user_email' type='email' placeholder='Your Email' className='border-2 border-[#eef065] w-72 md:w-96 h-10 px-4 rounded-xl' />
                         <textarea name='message' placeholder='Your Message' className='border-2 border-[#eef065] w-72 md:w-96 h-32 px-4 rounded-lg' />
-                        <button className='border-2 border-[#eef065] bg-[#eef065] text-white font-bold px-6 py-2 rounded-full hover:scale-110 hover:transition hover:ease-in hover:duration-200'>Send</button>
+                        <button className='border-2 border-[#eef065] bg-[#eef065] text-xl text-white font-bold px-6 py-2 rounded-full hover:scale-110 hover:transition hover:ease-in hover:duration-200'>Send</button>
                     </form>
                 </div>
             </div>

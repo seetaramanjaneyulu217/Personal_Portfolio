@@ -2,6 +2,7 @@ import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
 import me from '../assets/Me.svg'
 import about from '../assets/about.svg'
+import resume from '../assets/Seeta_RamAnjaneyulu_Resume.pdf'
 
 const About = () => {
     return (
@@ -30,7 +31,7 @@ const About = () => {
 
                     <div className='flex flex-col gap-y-3 md:flex-row gap-x-4 mt-14'>
                         <a href='#contact' className='border-2 border-yellow-300 bg-yellow-300 text-white font-bold px-16 md:px-6 py-2 rounded-full hover:scale-110 hover:transition hover:ease-in hover:duration-200'>Hire Me</a>
-                        <button className='border-2 border-yellow-200 text-yellow-300 font-bold px-12 md:px-6 py-2 rounded-full hover:bg-yellow-300 hover:border-yellow-300 hover:text-white hover:scale-110 hover:transition hover:ease-in hover:duration-200'>Download CV</button>
+                        <a href={resume} download="Seeta_Ramanjaneyulu_Resume" className='cursor-pointer border-2 border-yellow-200 text-yellow-300 font-bold px-12 md:px-6 py-2 rounded-full hover:bg-yellow-300 hover:border-yellow-300 hover:text-white hover:scale-110 hover:transition hover:ease-in hover:duration-200'>Download CV</a>
                     </div>
                 </div>
 

@@ -13,7 +13,7 @@ const experiences = [
     {
         title: 'Software Engineer Intern',
         company: 'OneShot.ai',
-        duration: 'February 2024 - Present',
+        duration: 'February 2024 - May 2024',
         image: oneshot,
         description: "As a Full Stack Developer, I am reponsible to work on fixing bugs in the application. Also implementing the new features whenever necessary. Building UI's using ReactJS and writing API's for the backend. Also I am responsible to working and fixing customer issues."
     }
@@ -21,7 +21,7 @@ const experiences = [
 
 const Experiences = () => {
     return (
-        <div className='mt-24 md:mt-24'>
+        <div className='mt-24 md:mt-24 font-notosans'>
             <div id='experiences' className='text-4xl md:text-5xl font-semibold text-[#eef065] text-center'>
                 Experiences
             </div>

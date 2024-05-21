@@ -38,7 +38,7 @@ const Header = () => {
                 {/* For options translate from right of the screen */}
 
                 <div className='hidden md:block justify-center'>
-                    <motion.ul className='text-sm flex gap-x-16'>
+                    <motion.ul initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.5 }} className='text-sm flex gap-x-16'>
                         <a href='/'>{"Home".toUpperCase()}</a>
                         <a href='#about'>{"About".toUpperCase()}</a>
                         <a href='#skills'>{"Skills".toUpperCase()}</a>
