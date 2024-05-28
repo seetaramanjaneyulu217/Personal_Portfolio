@@ -10,6 +10,11 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
+        if(form.current.user_name.value === "" || form.current.user_email.value === "" || form.current.message.value === "") {
+            toast.error('Fill the details completely')
+            return
+        }
+
         emailjs
             .sendForm("service_3vf5c6b", "template_hg36cvb", form.current, {
                 publicKey: "LAb9TzhV5s1NAzef-",
