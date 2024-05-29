@@ -2,6 +2,7 @@ import React from 'react'
 import { FaHtml5 } from "react-icons/fa";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { BiLogoJavascript } from "react-icons/bi";
+import { BiLogoTypescript } from "react-icons/bi";
 import { FaNodeJs } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
@@ -23,6 +24,10 @@ const skills = [
   {
     skillName: 'JavaScript',
     skillImg: <BiLogoJavascript color='#f0db4f' className='text-5xl md:text-6xl' />,
+  },
+  {
+    skillName: 'TypeScript',
+    skillImg: <BiLogoTypescript color='#1a73e8' className='text-5xl md:text-6xl' />
   },
   {
     skillName: 'NodeJS',
@@ -69,7 +74,7 @@ const Skills = () => {
       </div>
 
       {/* Right side */}
-      <div className='w-72 md:w-[23rem]'>
+      <div className='w-72 md:w-[27rem]'>
         <img src={skillImg} />
       </div>
 

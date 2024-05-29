@@ -58,7 +58,7 @@ const About = () => {
                             I'm a Full Stack Developer and App Developer.
                             I've worked on a variety of projects and have a great deal of experience.
                             At a startup named Gamersback Pvt Ltd, I worked as an intern ReactJS developer.
-                            Currently interning as a Full Stack Developer at OneShot.ai, a startup.
+                            Also interned as a Full Stack Developer at OneShot.ai, a startup.
                             I am open to learning new things and have solid knowledge of a variety of programming languages.
                         </p>
                     </div>
