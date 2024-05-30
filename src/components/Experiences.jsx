@@ -4,18 +4,18 @@ import oneshot from '../assets/oneshot.jpg'
 
 const experiences = [
     {
-        title: 'ReactJS Developer',
-        company: 'Gamersback Pvt Ltd',
-        duration: 'November 2023 - February 2024',
-        image: gamersback,
-        description: 'As a React.js developer, I developed a feature-rich audio player application using React.js and Tailwind CSS. Utilized Tailwind CSS for responsive and visually appealing interface design, highlighting my skills in front-end development. Developed a collaborative document editor similar to Google Docs, enabling users to write and upload images. Implemented inline styling features such as font size adjustments, underlining, and alignment options.'
-    },
-    {
         title: 'Software Engineer Intern',
         company: 'OneShot.ai',
         duration: 'February 2024 - May 2024',
         image: oneshot,
         description: "As a Full Stack Developer, I am reponsible to work on fixing bugs in the application. Also implementing the new features whenever necessary. Building UI's using ReactJS and writing API's for the backend. Also I am responsible to working and fixing customer issues."
+    },
+    {
+        title: 'ReactJS Developer',
+        company: 'Gamersback Pvt Ltd',
+        duration: 'November 2023 - February 2024',
+        image: gamersback,
+        description: 'As a React.js developer, I developed a feature-rich audio player application using React.js and Tailwind CSS. Utilized Tailwind CSS for responsive and visually appealing interface design, highlighting my skills in front-end development. Developed a collaborative document editor similar to Google Docs, enabling users to write and upload images. Implemented inline styling features such as font size adjustments, underlining, and alignment options.'
     }
 ]
 
