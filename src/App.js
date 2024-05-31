@@ -26,7 +26,7 @@ function App() {
     <>
       <div><Toaster position="top-center" /></div>
       <Header about={about} skills={skills} projects={projects} experiences={experiences} contact={contact} scrollToSection={scrollToSection} />
-      <About about={about} />
+      <About about={about} scrollToSection={scrollToSection} contact={contact} />
       <Skills skills={skills} />
       <Projects projects={projects} />
       <Experiences experiences={experiences} />

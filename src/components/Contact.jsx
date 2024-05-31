@@ -46,9 +46,9 @@ const Contact = ({ contact }) => {
 
                 <div className='flex justify-center'>
                     <form ref={form} onSubmit={sendEmail} className='mt-10 md:mt-20 flex flex-col gap-y-3'>
-                        <input name='user_name' type='text' placeholder='Your Name' className='border-2 border-[#eef065] w-72 md:w-96 h-10 px-4 rounded-xl' />
-                        <input name='user_email' type='email' placeholder='Your Email' className='border-2 border-[#eef065] w-72 md:w-96 h-10 px-4 rounded-xl' />
-                        <textarea name='message' placeholder='Your Message' className='border-2 border-[#eef065] w-72 md:w-96 h-32 px-4 rounded-lg' />
+                        <input name='user_name' type='text' placeholder='Your Name' className='border-2 border-[#eef065] w-72 md:w-96 h-10 px-4 rounded-xl outline-none' />
+                        <input name='user_email' type='email' placeholder='Your Email' className='border-2 border-[#eef065] w-72 md:w-96 h-10 px-4 rounded-xl outline-none' />
+                        <textarea name='message' placeholder='Your Message' className='border-2 border-[#eef065] w-72 md:w-96 h-32 p-4 rounded-lg outline-none' />
                         <button className='border-2 border-[#eef065] bg-[#eef065] text-xl text-white font-bold px-6 py-2 rounded-full hover:scale-110 hover:transition hover:ease-in hover:duration-200'>Send</button>
                     </form>
                 </div>

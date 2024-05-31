@@ -85,7 +85,7 @@ const Projects = ({ projects }) => {
                     setWebProjectType("External API")
                     setWebFilteredProjects(allProjects.filter(project => project.type === "External API" && project.device === 'web'))
                 }}>
-                    Projects that use External API
+                    Projects that uses External API
                 </div>
             ),
         },

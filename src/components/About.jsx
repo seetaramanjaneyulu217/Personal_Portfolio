@@ -4,7 +4,7 @@ import me from '../assets/Me.svg'
 import aboutImage from '../assets/about.svg'
 import resume from '../assets/Seeta_RamAnjaneyulu_Resume.pdf'
 
-const About = ({ about }) => {
+const About = ({ about, scrollToSection, contact }) => {
     return (
         <div>
             <div className='flex flex-col-reverse items-center md:flex-row md:justify-between h-[30rem] md:px-36 mt-16 gap-y-10 font-notosans'>
@@ -30,7 +30,7 @@ const About = ({ about }) => {
                     </div>
 
                     <div className='flex flex-col gap-y-3 md:flex-row gap-x-4 mt-14'>
-                        <a href='#contact' className='border-2 border-yellow-300 bg-yellow-300 text-white font-bold px-16 md:px-6 py-2 rounded-full hover:scale-110 hover:transition hover:ease-in hover:duration-200'>Hire Me</a>
+                        <a onClick={() => scrollToSection(contact)} className='cursor-pointer border-2 border-yellow-300 bg-yellow-300 text-white font-bold px-16 md:px-6 py-2 rounded-full hover:scale-110 hover:transition hover:ease-in hover:duration-200'>Hire Me</a>
                         <a href={resume} download="Seeta_Ramanjaneyulu_Resume" className='cursor-pointer border-2 border-yellow-200 text-yellow-300 font-bold px-12 md:px-6 py-2 rounded-full hover:bg-yellow-300 hover:border-yellow-300 hover:text-white hover:scale-110 hover:transition hover:ease-in hover:duration-200'>Download CV</a>
                     </div>
                 </div>
