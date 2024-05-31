@@ -131,7 +131,7 @@ const Projects = ({ projects }) => {
                 )
             }
 
-            <div className={`grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-10 mt-20 px-12 md:px-36 font-notosans ${(projectsType === 'web' && (webFilteredProjects.length !== 0 || webProjectType !== 'Filter')) ? 'hidden' : 'block'}`}>
+            <div data-aos="fade-up" data-aos-duration="1000" className={`grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-10 mt-20 px-12 md:px-36 font-notosans ${(projectsType === 'web' && (webFilteredProjects.length !== 0 || webProjectType !== 'Filter')) ? 'hidden' : 'block'}`}>
                 {
                     allProjects.map(project => (
                         <div key={project.title}>

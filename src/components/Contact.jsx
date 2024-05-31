@@ -34,17 +34,17 @@ const Contact = ({ contact }) => {
 
     return (
         <div className='mt-24 md:mt-36 font-notosans'>
-            <div ref={contact} className='text-[#eef065] text-3xl md:text-5xl text-center'>
+            <div data-aos="zoom-in" data-aos-duration="1000" ref={contact} className='text-[#eef065] text-3xl md:text-5xl text-center'>
                 Contact
             </div>
 
             {/* Form for contact form */}
             <div className='flex flex-col md:flex-row'>
-                <div>
+                <div data-aos="fade-right" data-aos-duration="1000">
                     <img src={contactImage} className='w-72 md:w-7/12 m-auto mt-10 md:mt-20' />
                 </div>
 
-                <div className='flex justify-center'>
+                <div data-aos="zoom-in" data-aos-duration="1000" className='flex justify-center'>
                     <form ref={form} onSubmit={sendEmail} className='mt-10 md:mt-20 flex flex-col gap-y-3'>
                         <input name='user_name' type='text' placeholder='Your Name' className='border-2 border-[#eef065] w-72 md:w-96 h-10 px-4 rounded-xl outline-none' />
                         <input name='user_email' type='email' placeholder='Your Email' className='border-2 border-[#eef065] w-72 md:w-96 h-10 px-4 rounded-xl outline-none' />

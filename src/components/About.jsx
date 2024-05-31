@@ -1,5 +1,6 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
+import { motion } from 'framer-motion';
 import me from '../assets/Me.svg'
 import aboutImage from '../assets/about.svg'
 import resume from '../assets/Seeta_RamAnjaneyulu_Resume.pdf'
@@ -29,7 +30,7 @@ const About = ({ about, scrollToSection, contact }) => {
                         </div>
                     </div>
 
-                    <div className='flex flex-col gap-y-3 md:flex-row gap-x-4 mt-14'>
+                    <div data-aos="fade-right" data-aos-duration="1000" className='flex flex-col gap-y-3 md:flex-row gap-x-4 mt-14'>
                         <a onClick={() => scrollToSection(contact)} className='cursor-pointer border-2 border-yellow-300 bg-yellow-300 text-white font-bold px-16 md:px-6 py-2 rounded-full hover:scale-110 hover:transition hover:ease-in hover:duration-200'>Hire Me</a>
                         <a href={resume} download="Seeta_Ramanjaneyulu_Resume" className='cursor-pointer border-2 border-yellow-200 text-yellow-300 font-bold px-12 md:px-6 py-2 rounded-full hover:bg-yellow-300 hover:border-yellow-300 hover:text-white hover:scale-110 hover:transition hover:ease-in hover:duration-200'>Download CV</a>
                     </div>
@@ -37,7 +38,7 @@ const About = ({ about, scrollToSection, contact }) => {
 
 
                 {/* For image of me */}
-                <div className='w-72 md:w-5/12'>
+                <div data-aos="fade-left" data-aos-duration="1000" className='w-72 md:w-5/12'>
                     <img src={aboutImage} />
                 </div>
             </div>
@@ -46,12 +47,12 @@ const About = ({ about, scrollToSection, contact }) => {
             {/* To tell about me */}
             <div className='mt-20 md:mt-28 md:px-36 flex flex-col md:flex-row items-center md:items-start gap-x-32 gap-y-9 font-notosans'>
                 {/* For image */}
-                <div className='w-72 md:w-5/12'>
+                <div data-aos="fade-right" data-aos-duration="1000" className='w-72 md:w-5/12'>
                     <img src={me} />
                 </div>
 
                 {/* Info about me */}
-                <div className='md:w-7/12 flex flex-col items-center md:items-start gap-y-8' ref={about}>
+                <div data-aos="fade-up" data-aos-duration="1000" className='md:w-7/12 flex flex-col items-center md:items-start gap-y-8' ref={about}>
                     <h1 className='text-5xl font-semibold text-[#eef065]'>About me</h1>
                     <div className='break-words px-8 md:px-0'>
                         <p className='mt-4 text-lg'>

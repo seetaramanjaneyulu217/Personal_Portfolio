@@ -62,7 +62,7 @@ const Skills = ({ skills }) => {
       {/* Left side  */}
       <div className='md:w-7/12 flex flex-col gap-y-10 items-center md:items-start'>
         <div className='text-[#eef065] text-5xl font-semibold'>Skills</div>
-        <div className='grid grid-cols-3 gap-x-10 md:gap-x-32 gap-y-10'>
+        <div data-aos="zoom-in" data-aos-duration="1000" className='grid grid-cols-3 gap-x-10 md:gap-x-32 gap-y-10'>
           {
             allSkills.map(skill => (
               <div key={skill.skillName}>
@@ -74,7 +74,7 @@ const Skills = ({ skills }) => {
       </div>
 
       {/* Right side */}
-      <div className='w-72 md:w-[27rem]'>
+      <div data-aos="fade-left" data-aos-duration="1000" className='w-72 md:w-[27rem]'>
         <img src={skillImg} />
       </div>
 
