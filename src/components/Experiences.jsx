@@ -2,7 +2,7 @@ import React from 'react'
 import gamersback from '../assets/GamersBack_Logo.png'
 import oneshot from '../assets/oneshot.jpg'
 
-const experiences = [
+const allExperiences = [
     {
         title: 'Software Engineer Intern',
         company: 'OneShot.ai',
@@ -19,16 +19,16 @@ const experiences = [
     }
 ]
 
-const Experiences = () => {
+const Experiences = ({ experiences }) => {
     return (
         <div className='mt-24 md:mt-24 font-notosans'>
-            <div id='experiences' className='text-4xl md:text-5xl font-semibold text-[#eef065] text-center'>
+            <div ref={experiences} className='text-4xl md:text-5xl font-semibold text-[#eef065] text-center'>
                 Experiences
             </div>
 
             <div className='flex flex-col gap-y-10'>
                 {
-                    experiences.map((experience, index) => (
+                    allExperiences.map((experience, index) => (
                         <div key={experience.company} className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center md:justify-between mt-10 md:mt-20 md:px-36 gap-x-32`}>
                             <div className='w-72 md:w-3/12 bg-black rounded-full p-2'>
                                 <img src={experience.image} />

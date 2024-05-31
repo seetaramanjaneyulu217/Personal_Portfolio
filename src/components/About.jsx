@@ -1,10 +1,10 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
 import me from '../assets/Me.svg'
-import about from '../assets/about.svg'
+import aboutImage from '../assets/about.svg'
 import resume from '../assets/Seeta_RamAnjaneyulu_Resume.pdf'
 
-const About = () => {
+const About = ({ about }) => {
     return (
         <div>
             <div className='flex flex-col-reverse items-center md:flex-row md:justify-between h-[30rem] md:px-36 mt-16 gap-y-10 font-notosans'>
@@ -38,7 +38,7 @@ const About = () => {
 
                 {/* For image of me */}
                 <div className='w-72 md:w-5/12'>
-                    <img src={about} />
+                    <img src={aboutImage} />
                 </div>
             </div>
 
@@ -51,7 +51,7 @@ const About = () => {
                 </div>
 
                 {/* Info about me */}
-                <div className='md:w-7/12 flex flex-col items-center md:items-start gap-y-8' id='about'>
+                <div className='md:w-7/12 flex flex-col items-center md:items-start gap-y-8' ref={about}>
                     <h1 className='text-5xl font-semibold text-[#eef065]'>About me</h1>
                     <div className='break-words px-8 md:px-0'>
                         <p className='mt-4 text-lg'>

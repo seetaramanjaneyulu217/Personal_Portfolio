@@ -1,9 +1,9 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser';
-import contact from '../assets/contact.svg'
+import contactImage from '../assets/contact.svg'
 import toast from 'react-hot-toast';
 
-const Contact = () => {
+const Contact = ({ contact }) => {
 
     const form = useRef();
 
@@ -34,14 +34,14 @@ const Contact = () => {
 
     return (
         <div className='mt-24 md:mt-36 font-notosans'>
-            <div id='contact' className='text-[#eef065] text-3xl md:text-5xl text-center'>
+            <div ref={contact} className='text-[#eef065] text-3xl md:text-5xl text-center'>
                 Contact
             </div>
 
             {/* Form for contact form */}
             <div className='flex flex-col md:flex-row'>
                 <div>
-                    <img src={contact} className='w-72 md:w-7/12 m-auto mt-10 md:mt-20' />
+                    <img src={contactImage} className='w-72 md:w-7/12 m-auto mt-10 md:mt-20' />
                 </div>
 
                 <div className='flex justify-center'>

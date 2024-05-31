@@ -8,7 +8,7 @@ import { Dropdown, Space } from 'antd';
 import { IoFilter } from "react-icons/io5";
 
 
-const projects = [
+const allProjects = [
     {
         title: 'Milton framer',
         image: milton,
@@ -43,7 +43,7 @@ const projects = [
     }
 ]
 
-const Projects = () => {
+const Projects = ({ projects }) => {
     const items = [
         {
             key: '1',
@@ -61,7 +61,7 @@ const Projects = () => {
             label: (
                 <div onClick={() => {
                     setWebProjectType("Static")
-                    setWebFilteredProjects(projects.filter(project => project.type === "Static" && project.device === 'web'))
+                    setWebFilteredProjects(allProjects.filter(project => project.type === "Static" && project.device === 'web'))
                 }}>
                     Static Frontend Projects
                 </div>
@@ -72,7 +72,7 @@ const Projects = () => {
             label: (
                 <div onClick={() => {
                     setWebProjectType("Full Stack")
-                    setWebFilteredProjects(projects.filter(project => project.type === "Full Stack" && project.device === 'web'))
+                    setWebFilteredProjects(allProjects.filter(project => project.type === "Full Stack" && project.device === 'web'))
                 }}>
                     Full Stack Web Projects
                 </div>
@@ -83,7 +83,7 @@ const Projects = () => {
             label: (
                 <div onClick={() => {
                     setWebProjectType("External API")
-                    setWebFilteredProjects(projects.filter(project => project.type === "External API" && project.device === 'web'))
+                    setWebFilteredProjects(allProjects.filter(project => project.type === "External API" && project.device === 'web'))
                 }}>
                     Projects that use External API
                 </div>
@@ -97,7 +97,7 @@ const Projects = () => {
     
     return (
         <>
-            <div id='projects' className='mt-28 md:mt-48 font-notosans'>
+            <div ref={projects} className='mt-28 md:mt-48 font-notosans'>
                 <div className='flex justify-center border-2 mx-6 md:mx-72 rounded-full'>
                     <div onClick={() => {
                         setProjectsType("all")
@@ -133,7 +133,7 @@ const Projects = () => {
 
             <div className={`grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-10 mt-20 px-12 md:px-36 font-notosans ${(projectsType === 'web' && (webFilteredProjects.length !== 0 || webProjectType !== 'Filter')) ? 'hidden' : 'block'}`}>
                 {
-                    projects.map(project => (
+                    allProjects.map(project => (
                         <div key={project.title}>
                             {
                                 projectsType === "all" && (

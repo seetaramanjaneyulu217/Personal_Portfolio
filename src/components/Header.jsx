@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { RxCross1 } from "react-icons/rx";
 import { CgMenuLeft } from 'react-icons/cg';
 
-const Header = () => {
+const Header = ({ about, skills, projects, experiences, contact, scrollToSection }) => {
 
     const [openMenu, setOpenMenu] = useState(false)
 
@@ -17,11 +17,11 @@ const Header = () => {
 
                 <ul className='text-base gap-x-5 flex flex-col gap-y-7 items-center text-white font-semibold'>
                     <a href='/'>{"Home".toUpperCase()}</a>
-                    <a href='#about'>{"About".toUpperCase()}</a>
-                    <a href='#skills'>{"Skills".toUpperCase()}</a>
-                    <a href='#projects'>{"Projects".toUpperCase()}</a>
-                    <a href='#experiences'>{"Experiences".toUpperCase()}</a>
-                    <a href='#contact'>{"Contact".toUpperCase()}</a>
+                    <a className='cursor-pointer' onClick={() => scrollToSection(about)}>{"About".toUpperCase()}</a>
+                    <a className='cursor-pointer' onClick={() => scrollToSection(skills)}>{"Skills".toUpperCase()}</a>
+                    <a className='cursor-pointer' onClick={() => scrollToSection(projects)}>{"Projects".toUpperCase()}</a>
+                    <a className='cursor-pointer' onClick={() => scrollToSection(experiences)}>{"Experiences".toUpperCase()}</a>
+                    <a className='cursor-pointer' onClick={() => scrollToSection(contact)}>{"Contact".toUpperCase()}</a>
                 </ul>
 
                 
@@ -40,11 +40,11 @@ const Header = () => {
                 <div className='hidden md:block justify-center'>
                     <motion.ul initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.5 }} className='text-sm flex gap-x-16'>
                         <a href='/'>{"Home".toUpperCase()}</a>
-                        <a href='#about'>{"About".toUpperCase()}</a>
-                        <a href='#skills'>{"Skills".toUpperCase()}</a>
-                        <a href='#projects'>{"Projects".toUpperCase()}</a>
-                        <a href='#experiences'>{"Experiences".toUpperCase()}</a>
-                        <a href='#contact'>{"Contact".toUpperCase()}</a>
+                        <a className='cursor-pointer' onClick={() => scrollToSection(about)}>{"About".toUpperCase()}</a>
+                        <a className='cursor-pointer' onClick={() => scrollToSection(skills)}>{"Skills".toUpperCase()}</a>
+                        <a className='cursor-pointer' onClick={() => scrollToSection(projects)}>{"Projects".toUpperCase()}</a>
+                        <a className='cursor-pointer' onClick={() => scrollToSection(experiences)}>{"Experiences".toUpperCase()}</a>
+                        <a className='cursor-pointer' onClick={() => scrollToSection(contact)}>{"Contact".toUpperCase()}</a>
                     </motion.ul>
                 </div>
 

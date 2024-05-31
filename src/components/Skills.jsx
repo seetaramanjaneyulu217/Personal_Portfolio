@@ -12,7 +12,7 @@ import { FaGitAlt } from "react-icons/fa";
 import skillImg from '../assets/skills.svg'
 
 
-const skills = [
+const allSkills = [
   {
     skillName: 'HTML',
     skillImg: <FaHtml5 color='#e44d26' className='text-5xl md:text-6xl' />,
@@ -55,16 +55,16 @@ const skills = [
   }
 ]
 
-const Skills = () => {
+const Skills = ({ skills }) => {
   return (
-    <div id='skills' className='mt-24 md:mt-44 md:px-36 flex flex-col md:flex-row items-center md:items-start font-notosans gap-y-10'>
+    <div ref={skills} className='mt-24 md:mt-44 md:px-36 flex flex-col md:flex-row items-center md:items-start font-notosans gap-y-10'>
 
       {/* Left side  */}
       <div className='md:w-7/12 flex flex-col gap-y-10 items-center md:items-start'>
         <div className='text-[#eef065] text-5xl font-semibold'>Skills</div>
         <div className='grid grid-cols-3 gap-x-10 md:gap-x-32 gap-y-10'>
           {
-            skills.map(skill => (
+            allSkills.map(skill => (
               <div key={skill.skillName}>
                 {skill.skillImg}
               </div>
