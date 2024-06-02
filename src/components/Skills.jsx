@@ -60,9 +60,9 @@ const Skills = ({ skills }) => {
     <div ref={skills} className='mt-24 md:mt-44 md:px-36 flex flex-col md:flex-row items-center md:items-start font-notosans gap-y-10'>
 
       {/* Left side  */}
-      <div className='md:w-7/12 flex flex-col gap-y-10 items-center md:items-start'>
+      <div data-aos="zoom-in" data-aos-duration="1000" className='md:w-7/12 flex flex-col gap-y-10 items-center md:items-start'>
         <div className='text-[#eef065] text-5xl font-semibold'>Skills</div>
-        <div data-aos="zoom-in" data-aos-duration="1000" className='grid grid-cols-3 gap-x-10 md:gap-x-32 gap-y-10'>
+        <div className='grid grid-cols-3 gap-x-10 md:gap-x-32 gap-y-10'>
           {
             allSkills.map(skill => (
               <div key={skill.skillName}>
