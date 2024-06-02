@@ -17,11 +17,11 @@ const Header = ({ about, skills, projects, experiences, contact, scrollToSection
 
                 <ul className='text-base gap-x-5 flex flex-col gap-y-7 items-center text-white font-semibold'>
                     <a href='/'>{"Home".toUpperCase()}</a>
-                    <a className='cursor-pointer' onClick={() => scrollToSection(about)}>{"About".toUpperCase()}</a>
-                    <a className='cursor-pointer' onClick={() => scrollToSection(skills)}>{"Skills".toUpperCase()}</a>
-                    <a className='cursor-pointer' onClick={() => scrollToSection(projects)}>{"Projects".toUpperCase()}</a>
-                    <a className='cursor-pointer' onClick={() => scrollToSection(experiences)}>{"Experiences".toUpperCase()}</a>
-                    <a className='cursor-pointer' onClick={() => scrollToSection(contact)}>{"Contact".toUpperCase()}</a>
+                    <a className='cursor-pointer' onClick={() => { scrollToSection(about); setOpenMenu(false) } }>{"About".toUpperCase()}</a>
+                    <a className='cursor-pointer' onClick={() => { scrollToSection(skills); setOpenMenu(false) } }>{"Skills".toUpperCase()}</a>
+                    <a className='cursor-pointer' onClick={() => { scrollToSection(projects); setOpenMenu(false) } }>{"Projects".toUpperCase()}</a>
+                    <a className='cursor-pointer' onClick={() => { scrollToSection(experiences); setOpenMenu(false) } }>{"Experiences".toUpperCase()}</a>
+                    <a className='cursor-pointer' onClick={() => { scrollToSection(contact); setOpenMenu(false) } }>{"Contact".toUpperCase()}</a>
                 </ul>
 
                 
