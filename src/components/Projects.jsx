@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import microo from '../assets/microo.png'
 import milton from '../assets/milton.png'
+import kanbanboard from '../assets/kanbanboard.png'
 import blog from '../assets/blog-app.png'
 import food_order from '../assets/food_order.png'
 import ProjectsCard from './ProjectsCard'
@@ -22,6 +23,14 @@ const allProjects = [
         image: microo,
         code: 'https://github.com/seetaramanjaneyulu217/Microo',
         live: 'https://microo.vercel.app/',
+        type: 'Static',
+        device: 'web'
+    },
+    {
+        title: 'Kanban Board',
+        image: kanbanboard,
+        code: 'https://github.com/seetaramanjaneyulu217/Kanban_Board',
+        live: 'https://kanban-board-iota-khaki.vercel.app/',
         type: 'Static',
         device: 'web'
     },
@@ -50,7 +59,7 @@ const Projects = ({ projects }) => {
             label: (
                 <div onClick={() => {
                     setWebProjectType("Filter")
-                    setWebFilteredProjects([])
+                    setWebFilteredProjects(allProjects)
                 }}>
                     All
                 </div>
@@ -94,7 +103,7 @@ const Projects = ({ projects }) => {
     const [projectsType, setProjectsType] = useState("all")
     const [webFilteredProjects, setWebFilteredProjects] = useState([])
     const [webProjectType, setWebProjectType] = useState("Filter")
-    
+
     return (
         <>
             <div ref={projects} className='mt-28 md:mt-48 font-notosans'>
@@ -123,7 +132,7 @@ const Projects = ({ projects }) => {
                         >
                             <a onClick={(e) => e.preventDefault()}>
                                 <Space className='cursor-pointer border-2 border-yellow-300 bg-yellow-300 px-5 py-2 rounded-full text-white'>
-                                    <IoFilter/> {webProjectType}
+                                    <IoFilter /> {webProjectType}
                                 </Space>
                             </a>
                         </Dropdown>
