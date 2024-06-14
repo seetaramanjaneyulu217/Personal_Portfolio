@@ -4,6 +4,7 @@ import milton from '../assets/milton.png'
 import kanbanboard from '../assets/kanbanboard.png'
 import blog from '../assets/blog-app.png'
 import food_order from '../assets/food_order.png'
+import dashboard_roado from '../assets/dashboard_roado.png'
 import ProjectsCard from './ProjectsCard'
 import { Dropdown, Space } from 'antd';
 import { IoFilter } from "react-icons/io5";
@@ -31,6 +32,14 @@ const allProjects = [
         image: kanbanboard,
         code: 'https://github.com/seetaramanjaneyulu217/Kanban_Board',
         live: 'https://kanban-board-iota-khaki.vercel.app/',
+        type: 'Static',
+        device: 'web'
+    },
+    {
+        title: 'Static Dashboard',
+        image: dashboard_roado,
+        code: 'https://github.com/seetaramanjaneyulu217/Dashboard_RoaDo',
+        live: 'https://dashboard-roado.vercel.app/',
         type: 'Static',
         device: 'web'
     },
