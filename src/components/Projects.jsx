@@ -4,6 +4,7 @@ import milton from '../assets/milton.png'
 import kanbanboard from '../assets/kanbanboard.png'
 import blog from '../assets/blog-app.png'
 import food_order from '../assets/food_order.png'
+import music_player from '../assets/Music_player.png'
 import dashboard_roado from '../assets/dashboard_roado.png'
 import ProjectsCard from './ProjectsCard'
 import { Dropdown, Space } from 'antd';
@@ -56,6 +57,14 @@ const allProjects = [
         image: food_order,
         code: 'https://github.com/seetaramanjaneyulu217/React_Food_Ordering_Site',
         live: 'https://react-food-ordering-site.vercel.app/',
+        type: 'External API',
+        device: 'web'
+    },
+    {
+        title: 'Music Player',
+        image: music_player,
+        code: 'https://github.com/seetaramanjaneyulu217/Music_player_Frontend',
+        live: 'https://music-player-frontend-livid.vercel.app/',
         type: 'External API',
         device: 'web'
     }
