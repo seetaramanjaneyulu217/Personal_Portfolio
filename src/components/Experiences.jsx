@@ -72,4 +72,4 @@ const Experiences = ({ experiences }) => {
   )
 }
 
-export default Experiences
+export default Experiences;
