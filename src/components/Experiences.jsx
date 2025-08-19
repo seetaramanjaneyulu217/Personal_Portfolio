@@ -1,8 +1,25 @@
 import React from "react";
-import gamersback from "../assets/GamersBack_Logo.png";
+// import gamersback from "../assets/GamersBack_Logo.png";
 import oneshot from "../assets/oneshot.jpg";
+import klenty from "../assets/klenty.png";
+import valgenesis from "../assets/valgenesis.png";
 
 const allExperiences = [
+  {
+    title: "Junior Software Engineer",
+    company: "ValGenesis",
+    duration: "Mar 2025 - Present",
+    image: valgenesis,
+    description: "I am responsible for working on the module of the application. Written common components in the Frontend using ReactJS which can be used in most part of the application. Also I am responsible for writing the API's in the backend.",
+  },
+  {
+    title: "Software Engineer Trainee",
+    company: "Klenty",
+    duration: "July 2024 - Feb 2025",
+    image: klenty,
+    description:
+      "I am reponsible to work on fixing bugs in the application. Also implementing the new features whenever necessary. Building UI's using ReactJS and writing API's for the backend.",
+  },
   {
     title: "Software Engineer Intern",
     company: "OneShot.ai",
@@ -11,14 +28,14 @@ const allExperiences = [
     description:
       "As a Full Stack Developer, I am reponsible to work on fixing bugs in the application. Also implementing the new features whenever necessary. Building UI's using ReactJS and writing API's for the backend. Also I am responsible to working and fixing customer issues.",
   },
-  {
-    title: "ReactJS Developer",
-    company: "Gamersback Pvt Ltd",
-    duration: "November 2023 - February 2024",
-    image: gamersback,
-    description:
-      "As a React.js developer, I developed a feature-rich audio player application using React.js and Tailwind CSS. Utilized Tailwind CSS for responsive and visually appealing interface design, highlighting my skills in front-end development. Developed a collaborative document editor similar to Google Docs, enabling users to write and upload images. Implemented inline styling features such as font size adjustments, underlining, and alignment options.",
-  },
+  // {
+  //   title: "ReactJS Developer",
+  //   company: "Gamersback Pvt Ltd",
+  //   duration: "November 2023 - February 2024",
+  //   image: gamersback,
+  //   description:
+  //     "As a React.js developer, I developed a feature-rich audio player application using React.js and Tailwind CSS. Utilized Tailwind CSS for responsive and visually appealing interface design, highlighting my skills in front-end development. Developed a collaborative document editor similar to Google Docs, enabling users to write and upload images. Implemented inline styling features such as font size adjustments, underlining, and alignment options.",
+  // },
 ];
 
 const Experiences = ({ experiences }) => {
